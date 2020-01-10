@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	var grid = [][]int{{1, 2, 2}, {13, 1, 1}}
-	end := findEndPoint(grid)
+	end := FindEndPoint(grid)
 	fmt.Println(end.X, end.Y)
 }
 
@@ -15,8 +15,9 @@ type Coord struct {
 	Y int
 }
 
-func minPathSum(grid [][]int) int {
-	endCoord := findEndPoint(grid)
+// MinPathSum func
+func MinPathSum(grid [][]int) int {
+	endCoord := FindEndPoint(grid)
 	if endCoord.X == 0 && endCoord.Y == 0 {
 		return 0
 	}
@@ -24,7 +25,8 @@ func minPathSum(grid [][]int) int {
 
 }
 
-func findEndPoint(grid [][]int) Coord {
+// FindEndPoint func
+func FindEndPoint(grid [][]int) Coord {
 	depth := len(grid)
 	breadth := len(grid[0])
 	if breadth != 0 && depth != 0 {
