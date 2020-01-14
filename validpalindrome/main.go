@@ -7,6 +7,11 @@ import (
 
 var alphaMap map[byte]string
 
+//Grokking with Go 💪🏽💪🏽💪🏽💪🏽
+//I used to test engineering candidates using Palindrome type questions. Here's mine most efficient (time) solution so far :)
+//Faster than 70% of the submissions, not too badddddd.....
+//#code #golang #leetcode #motivation #work
+
 func main() {
 	//atozs := []byte("abcdefghijklmnopqrstuvwxyz")
 	//AtoZs := []byte("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
